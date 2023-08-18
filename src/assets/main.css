@@ -1,0 +1,143 @@
+@import "./base.css";
+
+body {
+  -webkit-app-region: drag;
+  user-select: none;
+  /* font-family: "宋体"; */
+}
+#app {
+  font-weight: normal;
+}
+.inner-wrap {
+  width: 100%;
+  height: 650px;
+  position: absolute;
+  top: 30px;
+  -webkit-app-region: no-drag;
+}
+.no-drag {
+  -webkit-app-region: no-drag;
+}
+.point {
+  cursor: pointer;
+}
+.green-hover:hover {
+  color: #1ece9b;
+}
+
+/* 滚动条样式 */
+.scroll {
+  overflow-y: scroll;
+  /* scroll-behavior: smooth; */
+}
+.scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.scroll::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0);
+}
+
+/* 不显示滚动条 */
+.scroll-hidden::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0);
+}
+
+/* 鼠标移入显示滚动条 */
+.scroll-hover-hidden::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0);
+}
+.scroll-hover-hidden:hover::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* 移除菜单折叠面板背景色 */
+.el-collapse-item__header {
+  background-color: transparent !important;
+}
+.el-collapse-item__wrap {
+  background-color: transparent !important;
+}
+
+.new-roman {
+  font-family: "Times New Roman";
+}
+
+/* 去除弹出框最小宽度限制 */
+.el-popover.el-popper {
+  min-width: unset !important;
+}
+
+/* 音效对话框设置可移动,鼠标指针由move改为default */
+.play-right-dialog .el-dialog__header {
+  cursor: default !important;
+}
+/* 音效对话框背景色 */
+.play-right-dialog .el-dialog__body {
+  background-image: radial-gradient(
+    circle at 48.7% 44.3%,
+    rgb(105, 207, 92) 0%,
+    rgb(126, 173, 138) 22.9%,
+    rgb(38, 140, 123) 76.7%,
+    rgb(39, 136, 91) 100.2%
+  );
+}
+
+/* 侧边播放列表 */
+.play-list .el-drawer__body {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.play-list-modal {
+  background-color: transparent !important;
+}
+
+/* 搜索框 */
+.search-input .el-input__wrapper {
+  box-shadow: none !important;
+  background: rgba(187, 187, 187, 0.3) !important;
+  border-radius: 35px !important;
+}
+
+/* 歌手,通过js插入的 dom */
+.singer {
+  cursor: pointer;
+}
+.singer:hover {
+  color: #1ecf9e;
+}
+
+/* 添加到弹窗 */
+.add-popper {
+  padding: 0 !important;
+}
+
+/* 播放方式弹窗 */
+.play-type-prpover {
+  padding: 0 5px !important;
+}
+
+/* 鼠标悬停时向上移动 */
+.transform-hover:hover {
+  transform: translateY(-8px);
+  transition: all 0.3s linear;
+}
+
+/* 播放页面dialog背景色 */
+.play-page {
+  overflow: hidden;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(22, 141, 123, 1),
+    rgba(22, 141, 123, 0.6),
+    rgba(22, 141, 123, 0.4),
+    rgba(22, 141, 123, 0.2)
+  ) !important;
+}

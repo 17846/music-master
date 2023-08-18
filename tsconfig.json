@@ -1,0 +1,26 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "compilerOptions": {
+    "types": ["element-plus/global"],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "main-electron/**/*.ts",
+    "main-electron/**/*.d.ts",
+    "types/**/*.d.ts",
+    "types/svg.ts",
+    "types/svgName.ts"
+  ]
+}
